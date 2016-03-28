@@ -1,0 +1,5 @@
+command! GhciLoadFile :call GhciLoadFile()
+command! GhciRunCommand :call GhciRunCommand()
+command! GhciOpen :call GhciOpen()
+command! GhciClose :call GhciClose()
+command! GhciInterrupt :call GhciInterrupt()

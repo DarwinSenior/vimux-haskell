@@ -7,13 +7,6 @@ endif
 g:loaded_vimux_haskell = 1
 g:vimux_haskell_default_mapping = 0
 
-command! GhciLoadFile :call GhciLoadFile()
-command! GhciRunCommand :call GhciRunCommand()
-command! GhciOpen :call GhciOpen()
-command! GhciClose :call GhciClose()
-command! GhciInterrupt :call GhciInterrupt()
-
-
 function! GhciOpen()
     if executable("ghci")
         call VimuxOpenRunner()
