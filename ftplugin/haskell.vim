@@ -1,4 +1,4 @@
-if !g:vimux_haskell_default_mapping
+if !exists("g:vimux_haskell_default_mapping") || !g:vimux_haskell_default_mapping
     finish
 endif
 
