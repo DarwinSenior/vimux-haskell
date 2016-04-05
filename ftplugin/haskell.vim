@@ -2,9 +2,11 @@ if !exists("g:vimux_haskell_default_mapping") || !g:vimux_haskell_default_mappin
     finish
 endif
 
-nmap <Leader>ho :GhciOpen<Enter>
-nmap <Leader>hx :GhciClose<Enter>
-nmap <Leader>hi :GhciInterrupt<Enter>
-nmap <Leader>hl :GhciLoadFile<Enter>
-nmap <Leader>hr :GhciRunCommand<Enter>
-nmap <Leader>hr :GhciRunCommand<Enter>
+nmap gb <Plug>(operator-sendghci)
+
+nnoremap go :GhciOpen<Enter>
+nnoremap gx :GhciClose<Enter>
+nnoremap gi :GhciInterrupt<Enter>
+nnoremap gl :GhciLoadFile<Enter>
+nnoremap gc :GhciRunCommand<Enter>
+autocmd VimLeave *.hs :GhciClose
